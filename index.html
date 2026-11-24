@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sinega V | Senior Cloud &amp; DevOps Engineer (AWS)</title>
+<meta name="description" content="Sinega V is a Cloud &amp; DevOps Engineer with 5+ years of experience on AWS and GCP: Terraform, Jenkins, Ansible, Docker, Kubernetes and GitOps with Argo CD.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fa;--surf:#fff;--ink:#0f1e33;--mute:#52627a;--line:#d9e0ea;--blue:#1b4f9c;--amber:#c76f00;--ok:#1f8a5b;--on:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1624;--surf:#112136;--ink:#e6edf6;--mute:#9aaabf;--line:#22344b;--blue:#6aa6f5;--amber:#f5a524;--ok:#4cc38a;--on:#0b1624}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--blue)}a:focus-visible,.btn:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.w{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;gap:22px;height:56px;overflow-x:auto;white-space:nowrap}
+nav b{font:600 17px "IBM Plex Serif",Georgia,serif;margin-right:auto}
+nav a{color:var(--mute);text-decoration:none;font-size:14px}nav a:hover{color:var(--ink)}
+header.w{padding-top:84px;padding-bottom:56px}
+h1{font:600 clamp(38px,6.2vw,64px)/1.08 "IBM Plex Serif",Georgia,serif;letter-spacing:-.015em;margin:0;max-width:16em}
+.lead{font-size:19px;color:var(--mute);max-width:36em;margin:22px 0 0}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--blue);color:var(--blue)}
+.btn.p{background:var(--blue);color:var(--on)}
+.pipe{margin-top:56px;background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:22px}
+.pipe h2{margin:0 0 4px;font:500 13px "IBM Plex Mono",monospace;color:var(--mute)}
+.pipe p{margin:0 0 18px;color:var(--mute);font-size:14px}
+.stages{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;list-style:none;margin:0;padding:0}
+.st{position:relative;border:1.5px solid var(--line);border-radius:8px;padding:12px 12px 12px;opacity:.5;animation:lit .5s forwards;animation-delay:calc(var(--i)*.6s + .5s)}
+.st strong{display:block;font-size:15px}.st span{display:block;font:400 12.5px "IBM Plex Mono",monospace;color:var(--mute);margin-top:2px}
+.st i{position:absolute;top:10px;right:11px;font-style:normal;color:var(--ok);font-weight:700;opacity:0;animation:lit .5s forwards;animation-delay:calc(var(--i)*.6s + .5s)}
+@keyframes lit{to{opacity:1;border-color:var(--blue)}}
+.st i{--x:0}@keyframes lit{to{opacity:1;border-color:var(--blue)}}
+@media (prefers-reduced-motion:reduce){.st,.st i{animation:none;opacity:1}.st{border-color:var(--blue)}}
+section{padding:60px 0;border-top:1px solid var(--line)}
+h2.t{font:600 30px/1.2 "IBM Plex Serif",Georgia,serif;margin:0 0 28px}
+.about{display:grid;grid-template-columns:1.6fr 1fr;gap:40px}
+.facts{margin:0;padding:0;list-style:none;border-left:3px solid var(--blue)}
+.facts li{padding:6px 0 6px 16px;font-size:15px}.facts b{display:block;font-size:17px}
+.role{display:grid;grid-template-columns:210px 1fr;gap:28px;padding:26px 0;border-top:1px solid var(--line)}
+.role:first-of-type{border-top:0;padding-top:0}
+.role .m{color:var(--mute);font-size:14px}.role .m b{display:block;color:var(--ink);font-size:15px}
+.role h3{margin:0 0 4px;font-size:19px}.role .pj{color:var(--mute);margin:0 0 10px;font-size:14.5px}
+ul.b{margin:0;padding-left:20px}ul.b li{margin:6px 0;max-width:46em}
+.case{background:var(--surf);border:1px solid var(--line);border-radius:10px;padding:26px}
+.case h3{margin:0 0 6px;font-size:21px}.case>p{margin:0 0 18px;color:var(--mute);max-width:44em}
+.case svg{width:100%;height:auto;margin:6px 0 20px}
+.case .bx{fill:none;stroke:var(--blue);stroke-width:1.6}.case text{fill:var(--ink);font:500 14px "IBM Plex Sans",sans-serif}
+.case .sm{fill:var(--mute);font:400 12px "IBM Plex Mono",monospace}.case .ar{stroke:var(--amber);stroke-width:1.8;fill:none}
+.stack{display:grid;grid-template-columns:230px 1fr;gap:0 28px}
+.stack dt,.stack dd{margin:0;padding:14px 0;border-top:1px solid var(--line)}.stack dt{font-weight:600}.stack dd{color:var(--mute)}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}.edu h3{margin:0 0 4px;font-size:16px}.edu p{margin:0;color:var(--mute);font-size:15px}
+#contact p{max-width:34em;color:var(--mute);font-size:18px;margin:0}
+footer{padding:26px 0 44px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+@media (max-width:760px){.stages{grid-template-columns:1fr}.about,.role,.stack,.edu{grid-template-columns:1fr;gap:10px}.stack dt{border-top:1px solid var(--line);padding-bottom:0}.stack dd{border:0;padding-top:2px}header.w{padding-top:56px}}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>Sinega V</b><a href="#about">About</a><a href="#experience">Experience</a><a href="#project">Project</a><a href="#stack">Stack</a><a href="#contact">Contact</a></div></nav>
+<main>
+<header class="w">
+<h1>I build AWS platforms that ship through pipelines, not by hand.</h1>
+<p class="lead">Senior Cloud &amp; DevOps Engineer with 5+ years on AWS and GCP. I automate infrastructure, releases and operations with Terraform, Jenkins, Ansible, Kubernetes and GitOps.</p>
+<div class="cta"><a class="btn p" href="Sinega_V_Resume_Nov_2026_Final.pdf" download>Download resume</a><a class="btn" href="#contact">Contact me</a></div>
+<div class="pipe" aria-label="Delivery pipeline I run">
+<h2>delivery-pipeline</h2><p>The path every change takes in the environments I run.</p>
+<ol class="stages">
+<li class="st" style="--i:0"><i>✓</i><strong>Commit</strong><span>GitHub</span></li>
+<li class="st" style="--i:1"><i>✓</i><strong>Build</strong><span>Jenkins · Docker</span></li>
+<li class="st" style="--i:2"><i>✓</i><strong>Provision</strong><span>Terraform · Ansible</span></li>
+<li class="st" style="--i:3"><i>✓</i><strong>Deploy</strong><span>Argo CD · Kubernetes</span></li>
+<li class="st" style="--i:4"><i>✓</i><strong>Observe</strong><span>Prometheus · Grafana</span></li>
+</ol></div>
+</header>
+
+<section id="about"><div class="w about">
+<div><h2 class="t">About</h2>
+<p>I design, deploy and maintain scalable cloud solutions on AWS and GCP. My focus is automation: Infrastructure as Code, CI/CD and cloud security that make releases repeatable and environments consistent.</p>
+<p>I am comfortable with production pressure. I troubleshoot complex issues, work across teams, and have met a 2-hour SLA on production support requests.</p></div>
+<ul class="facts"><li><b>5+ years</b>Cloud engineering</li><li><b>AWS and GCP</b>Production experience on both</li><li><b>Google Cloud Associate Cloud Engineer</b>Valid until Aug 2028</li><li><b>Coimbatore, India</b>Open to AWS DevOps roles</li></ul>
+</div></section>
+
+<section id="experience"><div class="w"><h2 class="t">Experience</h2>
+<div class="role"><div class="m"><b>LTIMindtree</b>Nov 2025 – Present</div><div><h3>Cloud Engineer (AWS)</h3><p class="pj">Project: Veolia &amp; Compass</p><ul class="b">
+<li>Build and maintain Jenkins CI/CD pipelines for end-to-end build and deployment automation.</li>
+<li>Standardize infrastructure deployments by running Terraform builds and deployments through Jenkins.</li>
+<li>Run secure, scalable AWS environments on EC2, S3, RDS, ECS, ELB, ASG, VPC and IAM, including subnets, security groups, NAT gateways and VPN gateway.</li>
+<li>Automate server setup and configuration with Ansible playbooks.</li>
+<li>Run microservices on Docker and Kubernetes, monitored with Prometheus and Grafana dashboards.</li>
+<li>Automate routine operations with Shell scripting and Python.</li></ul></div></div>
+<div class="role"><div class="m"><b>LTIMindtree</b>Sep 2022 – Oct 2025</div><div><h3>Cloud Engineer (GCP)</h3><p class="pj">Project: Sabre</p><ul class="b">
+<li>Kept multiple production environments highly available on Compute Engine, Cloud Storage, Cloud SQL and VPC.</li>
+<li>Reduced recurring incidents with proactive monitoring in Cloud Monitoring and Logging, and root cause analysis.</li>
+<li>Implemented IAM policies, firewall rules, audit logging, and backup and disaster recovery for business-critical workloads.</li>
+<li>Provisioned GCP resources (buckets, Firestore, VMs) with reusable Terraform configurations and init, plan, apply and destroy workflows.</li>
+<li>Deployed and managed containerized workloads on Kubernetes, and automated configuration with Ansible.</li>
+<li>Resolved production support requests within a 2-hour SLA using ServiceNow.</li></ul></div></div>
+<div class="role"><div class="m"><b>Tata Consultancy Services</b>Apr 2021 – Aug 2022</div><div><h3>Process Associate</h3><p class="pj">Project: Bert</p><ul class="b">
+<li>Supported AWS services including EC2, S3, RDS, Lambda and VPC.</li>
+<li>Monitored infrastructure with AWS CloudWatch and resolved incidents to maintain uptime.</li>
+<li>Assisted with IAM policies and security best practices for access management.</li></ul></div></div>
+</div></section>
+
+<section id="project"><div class="w"><h2 class="t">Project</h2>
+<div class="case"><h3>GitOps-based Kubernetes deployment with Argo CD</h3>
+<p>Continuous delivery where Git is the single source of truth and the cluster follows it automatically.</p>
+<svg viewBox="0 0 700 110" role="img" aria-label="Git repository syncs to Argo CD, which deploys to the Kubernetes cluster">
+<rect class="bx" x="4" y="20" width="190" height="70" rx="8"/><text x="99" y="52" text-anchor="middle">Git repository</text><text class="sm" x="99" y="72" text-anchor="middle">manifests (YAML/Helm)</text>
+<rect class="bx" x="255" y="20" width="190" height="70" rx="8"/><text x="350" y="52" text-anchor="middle">Argo CD</text><text class="sm" x="350" y="72" text-anchor="middle">auto-sync · self-heal</text>
+<rect class="bx" x="506" y="20" width="190" height="70" rx="8"/><text x="601" y="52" text-anchor="middle">Kubernetes cluster</text><text class="sm" x="601" y="72" text-anchor="middle">containerized apps</text>
+<path class="ar" d="M198 55h53M441 55h61M246 50l7 5-7 5M497 50l7 5-7 5"/></svg>
+<ul class="b">
+<li>Implemented GitOps continuous delivery with Argo CD to deploy containerized applications on Kubernetes.</li>
+<li>Used declarative manifests with auto-sync, self-healing and drift detection for consistent, auditable releases.</li>
+<li>Connected the Git repository to the CI/CD pipeline to build Docker images and trigger rollouts, with quick rollbacks through Git revert.</li>
+<li>Improved deployment reliability and reduced manual intervention across environments.</li></ul></div>
+</div></section>
+
+<section id="stack"><div class="w"><h2 class="t">Technical stack</h2>
+<dl class="stack">
+<dt>AWS</dt><dd>EC2, Amazon S3, RDS, ECS, Lambda, ELB, ALB, Auto Scaling, SQS, SNS, CloudFront, Elastic Beanstalk, EBS, EFS, VPC, IAM</dd>
+<dt>GCP</dt><dd>Compute Engine, Cloud Storage, Cloud SQL, Firestore, VPC</dd>
+<dt>CI/CD and GitOps</dt><dd>Jenkins, GitHub, Argo CD, Helm</dd>
+<dt>Infrastructure as Code</dt><dd>Terraform, Ansible, CloudFormation (working knowledge)</dd>
+<dt>Containers</dt><dd>Docker, Kubernetes, EKS and GKE (working knowledge)</dd>
+<dt>Observability</dt><dd>AWS CloudWatch, GCP Cloud Monitoring and Logging, Prometheus, Grafana</dd>
+<dt>Security</dt><dd>IAM, firewall rules, security groups, GuardDuty and CloudTrail (working knowledge)</dd>
+<dt>Scripting and OS</dt><dd>Python, Shell, Linux, Windows</dd>
+</dl>
+<div class="edu"><div><h3>Certification</h3><p>Associate Cloud Engineer, Google Cloud Platform. Aug 2025, valid until Aug 2028.</p></div><div><h3>Education</h3><p>B.E., Computer Science and Engineering, Sri Krishna College of Technology. 2016 – 2020.</p></div></div>
+</div></section>
+
+<section id="contact"><div class="w"><h2 class="t">Let’s talk</h2>
+<p>I am looking for an AWS DevOps role where I can own pipelines, infrastructure and reliability. The quickest way to reach me is email.</p>
+<div class="cta"><a class="btn p" href="mailto:sinegavasanth99@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/sinega-vasanthakumar" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/sinegavasanth99-ui" target="_blank" rel="noopener">GitHub</a><a class="btn" href="Sinega_V_Resume_Nov_2026_Final.pdf" download>Resume (PDF)</a></div>
+</div></section>
+</main>
+<footer><div class="w">© 2026 Sinega V · Coimbatore, India</div></footer>
+</body>
+</html>
